@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avance de indicadores ITZA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="logo.png" alt="Logo">
+            <h1>Avance de indicadores</h1>
+            <div class="timeframe">
+                <button class="time-btn" id="month">Month</button>
+                <button class="time-btn" id="year">Year</button>
+                <button class="time-btn active" id="total">Total</button>
+            </div>
+        </header>
+        <section class="stats">
+            <div class="stat-box">
+                <h2>Instalado Abril</h2>
+                <p id="pageviews">16,634</p>
+            </div>
+            <div class="stat-box">
+                <h2>Avance Mayo</h2>
+                <p id="avg-time">12,359</p>
+            </div>
+            <div class="stat-box">
+                <h2>Proyeccion Mayo</h2>
+                <p id="page-exit">15,890</p>
+            </div>
+            <div class="stat-box">
+                <h2>Diferencia %</h2>
+                <p id="bounce">96%</p>
+            </div>
+        </section>
+        <section class="charts">
+            <div class="chart-container">
+                <h3>Codigo Verificador</h3>
+                <canvas id="codigoVerificadorChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>FPD M1</h3>
+                <canvas id="channelSessionsChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Usuarios Compartidos</h3>
+                <canvas id="sessionsChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Not Done</h3>
+                <canvas id="pageviewsChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Redes Sociales</h3>
+                <canvas id="sessionsByDeviceChart"></canvas>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
